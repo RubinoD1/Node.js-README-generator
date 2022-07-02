@@ -12,18 +12,30 @@
 // Function call to initialize app
 //init();
 
-//input
+
+
+//input - holds the command-line arguments
 const readmeDataArgs = process.argv.slice(2, process.argv.length);
+
+const [title, description] = readmeDataArgs;
 console.log(readmeDataArgs);
 
+
 //uses backticks ` not '****
-const generateReadme = (titleName, descriptionInfo) => {
+const generateReadme = (title, description) => {
    return `
-      Title: ${titleName}
-      Description: ${descriptionInfo}
+      # ${title}
+     ## Description 
+     ${description}
  `; 
 };
-console.log(generateReadme('My README', 'A README file'));
+console.log(title, description);
+console.log(generateReadme(title, description));
+
+
+
+
+
 
 
 
