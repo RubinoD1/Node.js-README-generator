@@ -1,5 +1,8 @@
 // TODO: Include packages needed for this application
-
+/*The require statement is a built-in function that's globally available in Node.js. 
+It allows the app.js file to access the fs module's functions through the fs assignment.
+*/ 
+const fs = require('fs');
 // TODO: Create an array of questions for user input
 //const questions = [];
 
