@@ -58,19 +58,58 @@ const promptUser = () => {
          }
       },
       {
+         type: 'confirm',
+         name: 'confirmDescription',
+         message: 'Would you like to enter a description?',
+         default: true
+      },
+      {
          type: 'input',
          name: 'description',
-         message: 'Enter a description'
+         message: 'Enter a description',
+         when: ({ confirmDescription }) => {
+            if (confirmDescription) {
+               return true;
+            } else {
+               return false;
+            }
+         }
+      },
+      {
+         type: 'confirm',
+         name: 'confirmInstallation',
+         message: 'Would you like to enter installation instructions?',
+         default: true
       },
       {
          type: 'input',
          name: 'installation',
-         message: 'Enter installation instructions'
+         message: 'Enter installation instructions',
+         when: ({ confirmInstallation }) => {
+            if (confirmInstallation) {
+               return true;
+            } else {
+               return false;
+            }
+         }
+      },
+      {
+         type: 'confirm',
+         name: 'confirmUsage',
+         message: 'Would you like to enter usage information?',
+         default: true
       },
       {
          type: 'input',
          name: 'usage',
-         message: 'Enter usage information'
+         message: 'Enter usage information',
+         when: ({ confirmUsage }) => {
+            if (confirmUsage) {
+               return true;
+            } else {
+               return false;
+            }
+         }
       },
       {
          //type: checkbox 
@@ -80,14 +119,40 @@ const promptUser = () => {
          //choices: ['','',]
       },
       {
+         type: 'confirm',
+         name: 'confirmContributing',
+         message: 'Would you like to enter contributing information?',
+         default: true
+      },
+      {
          type: 'input',
          name: 'contributing',
-         message: 'Enter contributing instructions'
+         message: 'Enter contributing instructions',
+         when: ({ confirmContributing }) => {
+            if (confirmContributing) {
+               return true;
+            } else {
+               return false;
+            }
+         }
+      },
+      {
+         type: 'confirm',
+         name: 'confirmTests',
+         message: 'Would you like to enter tests information?',
+         default: true
       },
       {
          type: 'input',
          name: 'tests',
-         message: 'Enter tests information'
+         message: 'Enter tests information',
+         when: ({ confirmTests }) => {
+            if (confirmTests) {
+               return true;
+            } else {
+               return false;
+            }
+         }
       },
       {
          type: 'input',
@@ -102,9 +167,22 @@ const promptUser = () => {
          }
       },
       {
+         type: 'confirm',
+         name: 'confirmEmail',
+         message: 'Would you like to enter email information?',
+         default: true
+      },
+      {
          type: 'input',
          name: 'email',
-         message: 'What is your email address?'
+         message: 'What is your email address?',
+         when: ({ confirmEmail }) => {
+            if (confirmEmail) {
+               return true;
+            } else {
+               return false;
+            }
+         }
       }
    ]);
 };
