@@ -3,6 +3,7 @@
 It allows the app.js file to access the fs module's functions through the fs assignment.
 */ 
 const fs = require('fs');
+const generateReadme =require('./src/readme-template.js');
 // TODO: Create an array of questions for user input
 //const questions = [];
 
@@ -18,21 +19,13 @@ const fs = require('fs');
 
 
 //input - holds the command-line arguments
-const readmeDataArgs = process.argv.slice(2, process.argv.length);
+const readmeDataArgs = process.argv.slice(2);
 
 const [title, description] = readmeDataArgs;
-console.log(readmeDataArgs);
+//console.log(readmeDataArgs);
 
 
-//uses backticks ` not '****
-//ReadMe template literal
-const generateReadme = (title, description) => {
-   return `
-      # ${title}
-     ## Description 
-     ${description}
- `; 
-};
+
 
 /*fs.writefile
 The first argument is the file name that will be created, or the output file.
