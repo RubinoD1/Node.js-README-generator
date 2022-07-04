@@ -32,14 +32,10 @@ const inquirer = require('inquirer');
 The first argument is the file name that will be created, or the output file.
 The second argument is the data that is being written: the README string template.
 The third argument is the callback function that will handle any errors as we as the success message.
-
 fs.writeFile('README.md', generateReadme(title, description, installation, usage, license, tests, github, email), err => {
    if (err) throw err;
-
-
    console.log('README created! Check out README.md to see the output!');
 });
-
 */
 
 const promptUser = () => {
@@ -112,11 +108,11 @@ const promptUser = () => {
          }
       },
       {
-         //type: checkbox 
-         type: 'input',
-         name: 'license',
-         message: 'Enter license information'
-         //choices: ['','',]
+         type: 'list',
+         message: 'Select your license',
+         //*** possibly add more  ****
+         choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
+         name: 'license'
       },
       {
          type: 'confirm',
@@ -188,9 +184,7 @@ const promptUser = () => {
 };
 
 promptUser()
+//answers.title works
 .then(answers => console.log(answers))
 .then(promptUser)
 .then(userAnswers => console.log(userAnswers));
-
-
-

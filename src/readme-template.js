@@ -1,3 +1,7 @@
+module.exports = templateData => {
+    console.log(templateData);
+}
+
 //uses backticks ` not '****
 //ReadMe template literal
 const generateReadme = (title, description, installation, usage, license, tests, github, email) => {
