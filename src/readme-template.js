@@ -1,26 +1,26 @@
-module.exports = templateData => {
-    console.log(templateData);
-}
+//templateData reflects that the parameter now accepts the promise object returned by inquirer
+function generateReadme(data) {
+    
+
 
 //uses backticks ` not '****
-//ReadMe template literal
-const generateReadme = (title, description, installation, usage, license, tests, github, email) => {
+
     return `
-       # ${title}
+       # ${data.title}
       ## Description 
-      ${description}
+      ${data.description}
       ## Table of contents
       ## Installation
-      ${installation}
+      ${data.installation}
       ## Usage
-      ${usage}
+      ${data.usage}
       ## License
-      ${license}
+      ${data.license}
       ## Tests
-      ${tests}
+      ${data.tests}
       ## Questions
-      Github: ${github}
-      Contact me by email: ${email}
+      Github: ${data.github}
+      Contact me by email: ${data.email}
   `; 
  };
 
