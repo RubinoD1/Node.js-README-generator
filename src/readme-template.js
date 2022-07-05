@@ -6,19 +6,37 @@ function generateReadme(data) {
 //uses backticks ` not '****
 
     return `
-       # ${data.title}
-      ## Description 
+# ${data.title}
+       
+## Description 
       ${data.description}
-      ## Table of contents
-      ## Installation
+
+## Table of contents
+
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Licence](#Licence)
+- [Contributing](#Contributing)
+- [Test](#Test)
+- [Questions](#Questions) 
+      
+## Installation
       ${data.installation}
-      ## Usage
+      
+## Usage
       ${data.usage}
-      ## License
+      
+## License
       ${data.license}
-      ## Tests
+      
+## Contributing
+      ${data.contrabuting}
+      
+## Tests
       ${data.tests}
-      ## Questions
+      
+## Questions
       Github: ${data.github}
       Contact me by email: ${data.email}
   `; 
