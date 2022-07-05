@@ -81,7 +81,7 @@ const questions = [
    {
       type: 'list',
       message: 'Select your license',
-      //*** possibly add more  ****
+      //added only a few licenses as the list would be very long otherwise.
       choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
       name: 'license'
    },
@@ -155,9 +155,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-   fs.writeFile("README.md", generateReadme(data), err => {
+   fs.writeFile("./Develop/utils/README.md", generateReadme(data), err => {
       if (err) throw err;
-      console.log('README created! Check out README.md to see the output!');
+      console.log('README created! Check out the README.md file in the utils folder!');
    });
    
 }
