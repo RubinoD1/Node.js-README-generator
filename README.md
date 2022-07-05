@@ -1,40 +1,15 @@
-
-# n ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
-  
+# Node.js README Generator 
+Link to repo: 
 
 ## Description 
-undefined
+This is a README generator that uses Node.js. Through a series of question prompts in the commmand line a README.md file is created within the 'utils' sub-folder located in the 'Develop' folder.  
 
-## Table of contents
+## Instructions
 
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Licence](#Licence)
-- [Contributing](#Contributing)
-- [Test](#Test)
-- [Questions](#Questions) 
-      
-## Installation
-undefined
-      
-## Usage
-undefined
-      
-## License
-Apache License 2.0
+- video tutorial: 
 
-More information: (https://opensource.org/licenses/Apache-2.0)
-      
-## Contributing
-undefined
-      
-## Tests
-undefined
-      
-## Questions
-      
-Github: n
-      
-Contact me by email: undefined
-  
+## Screenshots 
+
+prompts 
+
+output 

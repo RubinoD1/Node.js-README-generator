@@ -1,14 +1,8 @@
 //templateData reflects that the parameter now accepts the promise object returned by inquirer
 function generateReadme(data) {
     
-
-
-//uses backticks ` not '****
-
-    return `
-# ${data.title} ${data.badge}
+return `# ${data.title} ${data.badge}
   
-
 ## Description 
 ${data.description}
 

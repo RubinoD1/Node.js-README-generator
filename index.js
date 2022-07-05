@@ -82,7 +82,7 @@ const questions = [
       type: 'list',
       message: 'Select your license',
       //added only a few licenses as the list would be very long otherwise.
-      choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC'],
+      choices: ['Apache License 2.0', 'GNU GPLv3', 'MIT', 'ISC', 'No license'],
       name: 'license'
    },
    {
@@ -153,20 +153,28 @@ const questions = [
    }
 ];
 
-// TODO: Create a function to write README file
+/*function to write README file
+The first argument is the file name that will be created, or the output file.
+The second argument is the data that is being written: the README string template.
+The third argument is the callback function that will handle any errors or display a success message.*/
 function writeToFile(data) {
    fs.writeFile("./Develop/utils/README.md", generateReadme(data), err => {
+      //if there is an error
       if (err) throw err;
+      //else success message
       console.log('README created! Check out the README.md file in the utils folder!');
    });
    
 }
 
-// TODO: Create a function to initialize app
+// 
 function init() {
+   //triggers questions 
     inquirer.prompt(questions)
     .then(function(data){
+     //sets badge info based on user input
      generateMarkdown(data) 
+     //create file function
      writeToFile(data)
     });
 };
@@ -177,12 +185,4 @@ init();
 
 
 
-/*fs.writefile
-The first argument is the file name that will be created, or the output file.
-The second argument is the data that is being written: the README string template.
-The third argument is the callback function that will handle any errors as we as the success message.
-fs.writeFile('README.md', generateReadme(data), err => {
-   if (err) throw err;
-   console.log('README created! Check out README.md to see the output!');
-});
-*/
+
