@@ -6,10 +6,11 @@ function generateReadme(data) {
 //uses backticks ` not '****
 
     return `
-# ${data.title}
-       
+# ${data.title} ${data.badge}
+  
+
 ## Description 
-      ${data.description}
+${data.description}
 
 ## Table of contents
 
@@ -22,23 +23,27 @@ function generateReadme(data) {
 - [Questions](#Questions) 
       
 ## Installation
-      ${data.installation}
+${data.installation}
       
 ## Usage
-      ${data.usage}
+${data.usage}
       
 ## License
-      ${data.license}
+${data.license}
+
+${data.link}
       
 ## Contributing
-      ${data.contrabuting}
+${data.contrabuting}
       
 ## Tests
-      ${data.tests}
+${data.tests}
       
 ## Questions
-      Github: ${data.github}
-      Contact me by email: ${data.email}
+      
+Github: ${data.github}
+      
+Contact me by email: ${data.email}
   `; 
  };
 
