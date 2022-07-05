@@ -1,43 +1,43 @@
-//templateData reflects that the parameter now accepts the promise object returned by inquirer
+//creates the README file content based on user input 
 function generateReadme(data) {
     
 return `# ${data.title} ${data.badge}
   
-## Description 
-${data.description}
+
+${descriptionText}
 
 ## Table of contents
-
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Licence](#Licence)
-- [Contributing](#Contributing)
-- [Test](#Test)
+ 
+${data.confirmDescription}
+${data.confirmInstallation}
+${data.confirmUsage}
+- [License](#License)
+${data.confirmContributing}
+${data.confirmTest}
 - [Questions](#Questions) 
       
-## Installation
-${data.installation}
+
+${installationText}
       
-## Usage
-${data.usage}
+
+${usageText}
       
-## License
+## License <div id='License'>
 ${data.license}
 
 ${data.link}
       
-## Contributing
-${data.contrabuting}
+
+${contributingText}
       
-## Tests
-${data.tests}
+
+${testsText}
       
-## Questions
+## Questions <div id='Questions'>
       
-Github: ${data.github}
+Github: https://github.com/${data.github}
       
-Contact me by email: ${data.email}
+${emailText}
   `; 
  };
 
