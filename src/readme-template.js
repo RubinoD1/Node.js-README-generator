@@ -13,7 +13,7 @@ ${data.confirmInstallation}
 ${data.confirmUsage}
 - [License](#License)
 ${data.confirmContributing}
-${data.confirmTest}
+${data.confirmTests}
 - [Questions](#Questions) 
       
 
