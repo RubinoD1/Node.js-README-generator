@@ -1,8 +1,8 @@
-# My README  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# README ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 
 ## Description <div id='Description'>
-    This is a description
+    My description 
 
 ## Table of contents
  
@@ -16,11 +16,11 @@
       
 
 ## Installation <div id='Installation'>
-    How to install me 
+    to install
       
 
 ## Usage <div id='Usage'>
-    this is my usage info 
+    usage info 
       
 ## License <div id='License'>
 MIT
@@ -29,11 +29,11 @@ More information: (https://opensource.org/licenses/MIT)
       
 
 ## Contributing <div id='Contributing'>
-  how to contribute to me 
+  how to contribute
       
 
 ## Tests <div id='Tests'>
-    test almost done 
+    now testing 
       
 ## Questions <div id='Questions'>
       

@@ -1,12 +1,11 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 /*The require statement is a built-in function that's globally available in Node.js. 
-It allows the app.js file to access the fs module's functions through the fs assignment.
+It allows the index.js file to access the fs module's functions through the fs assignment.
 */ 
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateReadme =require('./src/readme-template.js');
 const generateMarkdown = require('./Develop/utils/generateMarkdown.js');
-
 
 
 // TODO: Create an array of questions for user input
