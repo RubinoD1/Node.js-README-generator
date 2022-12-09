@@ -3,7 +3,7 @@ Link to repo: https://github.com/RubinoD1/Node.js-README-generator
 * An example README can be found in the utils folder. 
 
 ## Description 
-This is a README generator that uses Node.js. Through a series of question prompts in the command line a README.md file is created within the 'utils' sub-folder located within the 'Develop' folder. 
+This is a README generator that uses Node.js. Through a series of question prompts in the command line, a README.md file is created within the 'utils' sub-folder located within the 'Develop' folder. 
 
 README options include:
 - Title (required)
